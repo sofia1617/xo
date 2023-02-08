@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="566" Width="700">
+    <Grid Margin="0,0,-10,-21">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="559*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Button1" Content="" HorizontalAlignment="Left" Height="100" Margin="17,102,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button2" Content="" HorizontalAlignment="Left" Height="100" Margin="137,102,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button3" Content="" HorizontalAlignment="Left" Height="100" Margin="257,102,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button4" Content="" HorizontalAlignment="Left" Height="100" Margin="17,222,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button5" Content=""  HorizontalAlignment="Left" Height="100" Margin="137,222,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button6" Content="" HorizontalAlignment="Left" Height="100" Margin="257,222,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button7" Content="" HorizontalAlignment="Left" Height="100" Margin="17,342,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button8" Content="" HorizontalAlignment="Left" Height="100" Margin="137,342,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click"  IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Button9" Content="" HorizontalAlignment="Left" Height="100" Margin="257,342,0,0" VerticalAlignment="Top" Width="100" FontSize="30"  Click="Button_Click" IsEnabled="False" FontFamily="Arial"/>
+        <Button x:Name="Restart" HorizontalAlignment="Left" Margin="17,466,0,0" VerticalAlignment="Top" Width="340" Height="45"  Content="начать игру" FontSize="30" Click="Restart_Click" FontFamily="Arial" Foreground="#FF6E74CA"/>
+        <TextBox x:Name="showtext" HorizontalAlignment="Left" Margin="17,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Height="58" FontWeight="Bold" FontSize="24" IsEnabled="False" Text="КРЕСТИКИ-НОЛИКИ" Cursor="Hand" TextAlignment="Center" Foreground="#FF081594" />
+        <TextBlock HorizontalAlignment="Left" Margin="419,0,0,0" TextWrapping="Wrap" Text="ПРАВИЛА ИГРЫ: 
+                   
+                   1. Чтобы начать игру нажмите на кнопку (начать игру)
+                   
+                   2. Выигрыш - три фигуры подряд (по вертикали, горизонтали и диагонали)
+                   
+                   3. Иначе ничья или проигрыш
+                   
+                   ЖЕЛАЮ УДАЧИ!!!!" VerticalAlignment="Center" Cursor="" Height="275" Width="242" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" FontSize="20"/>
+    </Grid>
+</Window>
